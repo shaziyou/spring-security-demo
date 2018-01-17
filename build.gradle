@@ -31,5 +31,6 @@ dependencies {
     compile "com.mchange:c3p0:${c3p0Version}"
     compile "mysql:mysql-connector-java"
     compile "org.projectlombok:lombok"
+    providedCompile "org.springframework.boot:spring-boot-starter-tomcat"
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }
