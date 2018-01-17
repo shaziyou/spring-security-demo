@@ -37,5 +37,6 @@ public class WebSecurityConfigurer extends WebSecurityConfigurerAdapter {
                 .roles("USER");
         */
         auth.userDetailsService(userDetailsService);
+//                .passwordEncoder(null);
     }
 }
