@@ -1,5 +1,5 @@
 group 'com.shaziyou.demo'
-version '1.0'
+version '1.0-gradle'
 
 buildscript {
     repositories {
@@ -24,7 +24,12 @@ repositories {
 
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-configuration-processor"
     compile "org.springframework.boot:spring-boot-starter-security"
     compile "org.springframework.boot:spring-boot-starter-thymeleaf"
+    compile "org.mybatis.spring.boot:mybatis-spring-boot-starter:$mybatisVersion"
+    compile "com.mchange:c3p0:${c3p0Version}"
+    compile "mysql:mysql-connector-java"
+    compile "org.projectlombok:lombok"
     testCompile "org.springframework.boot:spring-boot-starter-test"
 }
